@@ -3,10 +3,12 @@
     {
       "name": "hg38",
       "displayName": "Homo sapiens (hg38)",
-      "aliases": ["GRCh38"],
+      "aliases": [
+        "GRCh38"
+      ],
       "sequence": {
         "type": "ReferenceSequenceTrack",
-        "trackId": "P6R5xbRqRr",
+        "trackId": "hg38_seq",
         "adapter": {
           "type": "BgzipFastaAdapter",
           "fastaLocation": {
@@ -31,14 +33,6 @@
             "locationType": "UriLocation"
           }
         }
-      },
-      "cytobands": {
-        "adapter": {
-          "type": "CytobandAdapter",
-          "cytobandLocation": {
-            "uri": "https://s3.amazonaws.com/jbrowse.org/genomes/GRCh38/cytoBand.txt"
-          }
-        }
       }
     }
   ],
@@ -47,8 +41,12 @@
       "type": "FeatureTrack",
       "trackId": "ncbi_refseq_109_hg38",
       "name": "NCBI RefSeq",
-      "assemblyNames": ["hg38"],
-      "category": ["Annotation"],
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Annotation"
+      ],
       "adapter": {
         "type": "Gff3TabixAdapter",
         "gffGzLocation": {
@@ -64,3416 +62,2944 @@
       }
     },
     {
-      "type": "FeatureTrack",
-      "trackId": "clinvar_hg38",
-      "name": "ClinVar variants",
-      "assemblyNames": ["hg38"],
-      "category": ["Annotation"],
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined__XX_21bp_oe_weighted",
+      "name": "gnomad mis combined  XX 21bp oe weighted",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
-        "type": "BigBedAdapter",
-        "bigBedLocation": {
-          "uri": "https://hgdownload.soe.ucsc.edu/gbdb/hg38/bbi/clinvar/clinvarMain.bb",
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined__XX_21bp_oe_weighted.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_combined__XX_21bp_oe_weighted_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined__XX_3bp_oe_weighted",
+      "name": "gnomad mis combined  XX 3bp oe weighted",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined__XX_3bp_oe_weighted.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_combined__XX_3bp_oe_weighted_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined__XX_45bp_oe_weighted",
+      "name": "gnomad mis combined  XX 45bp oe weighted",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined__XX_45bp_oe_weighted.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_combined__XX_45bp_oe_weighted_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined__XX_93bp_oe_weighted",
+      "name": "gnomad mis combined  XX 93bp oe weighted",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined__XX_93bp_oe_weighted.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_combined__XX_93bp_oe_weighted_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined__XX_9bp_oe_weighted",
+      "name": "gnomad mis combined  XX 9bp oe weighted",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined__XX_9bp_oe_weighted.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_combined__XX_9bp_oe_weighted_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined__XY_21bp_oe_weighted",
+      "name": "gnomad mis combined  XY 21bp oe weighted",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined__XY_21bp_oe_weighted.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_combined__XY_21bp_oe_weighted_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined__XY_3bp_oe_weighted",
+      "name": "gnomad mis combined  XY 3bp oe weighted",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined__XY_3bp_oe_weighted.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_combined__XY_3bp_oe_weighted_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined__XY_45bp_oe_weighted",
+      "name": "gnomad mis combined  XY 45bp oe weighted",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined__XY_45bp_oe_weighted.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_combined__XY_45bp_oe_weighted_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined__XY_93bp_oe_weighted\r",
+      "name": "gnomad mis combined  XY 93bp oe weighted\r",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined__XY_93bp_oe_weighted\r.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_combined__XY_93bp_oe_weighted\r_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined__XY_9bp_oe_weighted",
+      "name": "gnomad mis combined  XY 9bp oe weighted",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined__XY_9bp_oe_weighted.bw",
+          "locationType": "UriLocation"
+        }
+      },
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_combined__XY_9bp_oe_weighted_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined_aa_vir_depth_af0epos00",
+      "name": "gnomad mis combined aa vir depth af0epos00",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined_aa_vir_depth_af0epos00.bw",
           "locationType": "UriLocation"
         }
       }
     },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_mis_combined_21bp_oe_weighted",
-      "name": "gnomad mis combined 21bp oe weighted",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_21bp_oe_weighted.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_21bp_oe_weighted_display",
-        
-        "renderers": {
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "gnomad_mis_combined_3bp_oe_weighted",
-      "name": "gnomad mis combined 3bp oe weighted",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_3bp_oe_weighted.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_3bp_oe_weighted_display",
-        
-        "renderers": {
-          
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "gnomad_mis_combined_45bp_oe_weighted",
-      "name": "gnomad mis combined 45bp oe weighted",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_45bp_oe_weighted.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_45bp_oe_weighted_display",
-        
-        "renderers": {
-          
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "gnomad_mis_combined_93bp_oe_weighted",
-      "name": "gnomad mis combined 93bp oe weighted",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_93bp_oe_weighted.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_93bp_oe_weighted_display",
-        
-        "renderers": {
-          
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "gnomad_mis_combined_9bp_oe_weighted",
-      "name": "gnomad mis combined 9bp oe weighted",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_9bp_oe_weighted.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_9bp_oe_weighted_display",
-        
-        "renderers": {
-          
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "gnomad_mis_combined_aa_vir_depth_af0epos00",
-      "name": "gnomad mis combined aa vir depth af0epos00",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_aa_vir_depth_af0epos00.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_aa_vir_depth_af0epos00_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
-        }
-      }]
-    }
-,
-    {
-      "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_aa_vir_depth_af1eneg02",
       "name": "gnomad mis combined aa vir depth af1eneg02",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_aa_vir_depth_af1eneg02.bw",
+          "uri": "BW/gnomad_mis_combined_aa_vir_depth_af1eneg02.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_aa_vir_depth_af1eneg02_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_aa_vir_depth_af1eneg03",
       "name": "gnomad mis combined aa vir depth af1eneg03",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_aa_vir_depth_af1eneg03.bw",
+          "uri": "BW/gnomad_mis_combined_aa_vir_depth_af1eneg03.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_aa_vir_depth_af1eneg03_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_aa_vir_depth_af1eneg04",
       "name": "gnomad mis combined aa vir depth af1eneg04",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_aa_vir_depth_af1eneg04.bw",
+          "uri": "BW/gnomad_mis_combined_aa_vir_depth_af1eneg04.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_aa_vir_depth_af1eneg04_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_aa_vir_depth_af1eneg05",
       "name": "gnomad mis combined aa vir depth af1eneg05",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_aa_vir_depth_af1eneg05.bw",
+          "uri": "BW/gnomad_mis_combined_aa_vir_depth_af1eneg05.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_aa_vir_depth_af1eneg05_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_aa_vir_depth_af1eneg06",
       "name": "gnomad mis combined aa vir depth af1eneg06",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_aa_vir_depth_af1eneg06.bw",
+          "uri": "BW/gnomad_mis_combined_aa_vir_depth_af1eneg06.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_aa_vir_depth_af1eneg06_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_aa_vir_depth_af1eneg07",
       "name": "gnomad mis combined aa vir depth af1eneg07",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_aa_vir_depth_af1eneg07.bw",
+          "uri": "BW/gnomad_mis_combined_aa_vir_depth_af1eneg07.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_aa_vir_depth_af1eneg07_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_aa_vir_depth_af1eneg08",
       "name": "gnomad mis combined aa vir depth af1eneg08",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_aa_vir_depth_af1eneg08.bw",
+          "uri": "BW/gnomad_mis_combined_aa_vir_depth_af1eneg08.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_aa_vir_depth_af1eneg08_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_aa_vir_length_af0epos00",
       "name": "gnomad mis combined aa vir length af0epos00",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_aa_vir_length_af0epos00.bw",
+          "uri": "BW/gnomad_mis_combined_aa_vir_length_af0epos00.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_aa_vir_length_af0epos00_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_aa_vir_length_af1eneg02",
       "name": "gnomad mis combined aa vir length af1eneg02",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_aa_vir_length_af1eneg02.bw",
+          "uri": "BW/gnomad_mis_combined_aa_vir_length_af1eneg02.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_aa_vir_length_af1eneg02_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_aa_vir_length_af1eneg03",
       "name": "gnomad mis combined aa vir length af1eneg03",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_aa_vir_length_af1eneg03.bw",
+          "uri": "BW/gnomad_mis_combined_aa_vir_length_af1eneg03.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_aa_vir_length_af1eneg03_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_aa_vir_length_af1eneg04",
       "name": "gnomad mis combined aa vir length af1eneg04",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_aa_vir_length_af1eneg04.bw",
+          "uri": "BW/gnomad_mis_combined_aa_vir_length_af1eneg04.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_aa_vir_length_af1eneg04_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_aa_vir_length_af1eneg05",
       "name": "gnomad mis combined aa vir length af1eneg05",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_aa_vir_length_af1eneg05.bw",
+          "uri": "BW/gnomad_mis_combined_aa_vir_length_af1eneg05.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_aa_vir_length_af1eneg05_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_aa_vir_length_af1eneg06",
       "name": "gnomad mis combined aa vir length af1eneg06",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_aa_vir_length_af1eneg06.bw",
+          "uri": "BW/gnomad_mis_combined_aa_vir_length_af1eneg06.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_aa_vir_length_af1eneg06_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_aa_vir_length_af1eneg07",
       "name": "gnomad mis combined aa vir length af1eneg07",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_aa_vir_length_af1eneg07.bw",
+          "uri": "BW/gnomad_mis_combined_aa_vir_length_af1eneg07.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_aa_vir_length_af1eneg07_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_aa_vir_length_af1eneg08",
       "name": "gnomad mis combined aa vir length af1eneg08",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_aa_vir_length_af1eneg08.bw",
+          "uri": "BW/gnomad_mis_combined_aa_vir_length_af1eneg08.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_aa_vir_length_af1eneg08_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined_mean_vir_exp_af0epos00",
+      "name": "gnomad mis combined mean vir exp af0epos00",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined_mean_vir_exp_af0epos00.bw",
+          "locationType": "UriLocation"
         }
-      }]
-    }
-,
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined_mean_vir_exp_af1eneg02",
+      "name": "gnomad mis combined mean vir exp af1eneg02",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined_mean_vir_exp_af1eneg02.bw",
+          "locationType": "UriLocation"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined_mean_vir_exp_af1eneg03",
+      "name": "gnomad mis combined mean vir exp af1eneg03",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined_mean_vir_exp_af1eneg03.bw",
+          "locationType": "UriLocation"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined_mean_vir_exp_af1eneg04",
+      "name": "gnomad mis combined mean vir exp af1eneg04",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined_mean_vir_exp_af1eneg04.bw",
+          "locationType": "UriLocation"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined_mean_vir_exp_af1eneg05",
+      "name": "gnomad mis combined mean vir exp af1eneg05",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined_mean_vir_exp_af1eneg05.bw",
+          "locationType": "UriLocation"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined_mean_vir_exp_af1eneg06",
+      "name": "gnomad mis combined mean vir exp af1eneg06",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined_mean_vir_exp_af1eneg06.bw",
+          "locationType": "UriLocation"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined_mean_vir_exp_af1eneg07",
+      "name": "gnomad mis combined mean vir exp af1eneg07",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined_mean_vir_exp_af1eneg07.bw",
+          "locationType": "UriLocation"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined_mean_vir_exp_af1eneg08",
+      "name": "gnomad mis combined mean vir exp af1eneg08",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined_mean_vir_exp_af1eneg08.bw",
+          "locationType": "UriLocation"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined_na_total_af0epos00",
+      "name": "gnomad mis combined na total af0epos00",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined_na_total_af0epos00.bw",
+          "locationType": "UriLocation"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined_na_total_af1eneg02",
+      "name": "gnomad mis combined na total af1eneg02",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined_na_total_af1eneg02.bw",
+          "locationType": "UriLocation"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined_na_total_af1eneg03",
+      "name": "gnomad mis combined na total af1eneg03",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined_na_total_af1eneg03.bw",
+          "locationType": "UriLocation"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined_na_total_af1eneg04",
+      "name": "gnomad mis combined na total af1eneg04",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined_na_total_af1eneg04.bw",
+          "locationType": "UriLocation"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined_na_total_af1eneg05",
+      "name": "gnomad mis combined na total af1eneg05",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined_na_total_af1eneg05.bw",
+          "locationType": "UriLocation"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined_na_total_af1eneg06",
+      "name": "gnomad mis combined na total af1eneg06",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined_na_total_af1eneg06.bw",
+          "locationType": "UriLocation"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined_na_total_af1eneg07",
+      "name": "gnomad mis combined na total af1eneg07",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined_na_total_af1eneg07.bw",
+          "locationType": "UriLocation"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "gnomad_mis_combined_na_total_af1eneg08",
+      "name": "gnomad mis combined na total af1eneg08",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "BW/gnomad_mis_combined_na_total_af1eneg08.bw",
+          "locationType": "UriLocation"
+        }
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_vir_depth_af0epos00",
       "name": "gnomad mis combined vir depth af0epos00",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_vir_depth_af0epos00.bw",
+          "uri": "BW/gnomad_mis_combined_vir_depth_af0epos00.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_vir_depth_af0epos00_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_vir_depth_af1eneg02",
       "name": "gnomad mis combined vir depth af1eneg02",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_vir_depth_af1eneg02.bw",
+          "uri": "BW/gnomad_mis_combined_vir_depth_af1eneg02.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_vir_depth_af1eneg02_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_vir_depth_af1eneg03",
       "name": "gnomad mis combined vir depth af1eneg03",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_vir_depth_af1eneg03.bw",
+          "uri": "BW/gnomad_mis_combined_vir_depth_af1eneg03.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_vir_depth_af1eneg03_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_vir_depth_af1eneg04",
       "name": "gnomad mis combined vir depth af1eneg04",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_vir_depth_af1eneg04.bw",
+          "uri": "BW/gnomad_mis_combined_vir_depth_af1eneg04.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_vir_depth_af1eneg04_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_vir_depth_af1eneg05",
       "name": "gnomad mis combined vir depth af1eneg05",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_vir_depth_af1eneg05.bw",
+          "uri": "BW/gnomad_mis_combined_vir_depth_af1eneg05.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_vir_depth_af1eneg05_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_vir_depth_af1eneg06",
       "name": "gnomad mis combined vir depth af1eneg06",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_vir_depth_af1eneg06.bw",
+          "uri": "BW/gnomad_mis_combined_vir_depth_af1eneg06.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_vir_depth_af1eneg06_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_vir_depth_af1eneg07",
       "name": "gnomad mis combined vir depth af1eneg07",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_vir_depth_af1eneg07.bw",
+          "uri": "BW/gnomad_mis_combined_vir_depth_af1eneg07.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_vir_depth_af1eneg07_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_vir_depth_af1eneg08",
       "name": "gnomad mis combined vir depth af1eneg08",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_vir_depth_af1eneg08.bw",
+          "uri": "BW/gnomad_mis_combined_vir_depth_af1eneg08.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_vir_depth_af1eneg08_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_vir_length_af0epos00",
       "name": "gnomad mis combined vir length af0epos00",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_vir_length_af0epos00.bw",
+          "uri": "BW/gnomad_mis_combined_vir_length_af0epos00.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_vir_length_af0epos00_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_vir_length_af1eneg02",
       "name": "gnomad mis combined vir length af1eneg02",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_vir_length_af1eneg02.bw",
+          "uri": "BW/gnomad_mis_combined_vir_length_af1eneg02.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_vir_length_af1eneg02_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_vir_length_af1eneg03",
       "name": "gnomad mis combined vir length af1eneg03",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_vir_length_af1eneg03.bw",
+          "uri": "BW/gnomad_mis_combined_vir_length_af1eneg03.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_vir_length_af1eneg03_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_vir_length_af1eneg04",
       "name": "gnomad mis combined vir length af1eneg04",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_vir_length_af1eneg04.bw",
+          "uri": "BW/gnomad_mis_combined_vir_length_af1eneg04.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_vir_length_af1eneg04_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_vir_length_af1eneg05",
       "name": "gnomad mis combined vir length af1eneg05",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_vir_length_af1eneg05.bw",
+          "uri": "BW/gnomad_mis_combined_vir_length_af1eneg05.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_vir_length_af1eneg05_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_vir_length_af1eneg06",
       "name": "gnomad mis combined vir length af1eneg06",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_vir_length_af1eneg06.bw",
+          "uri": "BW/gnomad_mis_combined_vir_length_af1eneg06.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_vir_length_af1eneg06_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_vir_length_af1eneg07",
       "name": "gnomad mis combined vir length af1eneg07",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_vir_length_af1eneg07.bw",
+          "uri": "BW/gnomad_mis_combined_vir_length_af1eneg07.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_vir_length_af1eneg07_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
       "trackId": "gnomad_mis_combined_vir_length_af1eneg08",
       "name": "gnomad mis combined vir length af1eneg08",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_combined_vir_length_af1eneg08.bw",
+          "uri": "BW/gnomad_mis_combined_vir_length_af1eneg08.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_combined_vir_length_af1eneg08_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
-        }
-      }]
-    }
-,
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "gnomad_mis_exomes_21bp_oe",
-      "name": "gnomad mis exomes 21bp oe",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_exomes_21bp_oe.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_exomes_21bp_oe_display",
-        
-        "renderers": {
-          
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "gnomad_mis_exomes_3bp_oe",
-      "name": "gnomad mis exomes 3bp oe",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_exomes_3bp_oe.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_exomes_3bp_oe_display",
-        
-        "renderers": {
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "gnomad_mis_exomes_45bp_oe",
-      "name": "gnomad mis exomes 45bp oe",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_exomes_45bp_oe.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_exomes_45bp_oe_display",
-        
-        "renderers": {
-          
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "gnomad_mis_exomes_93bp_oe",
-      "name": "gnomad mis exomes 93bp oe",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_exomes_93bp_oe.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_exomes_93bp_oe_display",
-        
-        "renderers": {
-          
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "gnomad_mis_exomes_9bp_oe",
-      "name": "gnomad mis exomes 9bp oe",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_exomes_9bp_oe.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_exomes_9bp_oe_display",
-        
-        "renderers": {
-          
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "gnomad_mis_genomes_21bp_oe",
-      "name": "gnomad mis genomes 21bp oe",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_genomes_21bp_oe.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_genomes_21bp_oe_display",
-        
-        "renderers": {
-          
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "gnomad_mis_genomes_3bp_oe",
-      "name": "gnomad mis genomes 3bp oe",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_genomes_3bp_oe.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_genomes_3bp_oe_display",
-        
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "gnomad_mis_genomes_45bp_oe",
-      "name": "gnomad mis genomes 45bp oe",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_genomes_45bp_oe.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_genomes_45bp_oe_display",
-        
-        "renderers": {
-          
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "gnomad_mis_genomes_93bp_oe",
-      "name": "gnomad mis genomes 93bp oe",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_genomes_93bp_oe.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_genomes_93bp_oe_display",
-        
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "gnomad_mis_genomes_9bp_oe",
-      "name": "gnomad mis genomes 9bp oe",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "./BW/gnomad_mis_genomes_9bp_oe.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_mis_genomes_9bp_oe_display",
-        
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_21bp_oe_weighted",
-      "name": "gnomad syn combined 21bp oe weighted",
+      "trackId": "gnomad_mis_combined_vir_mu_exp_af0epos00",
+      "name": "gnomad mis combined vir mu exp af0epos00",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_21bp_oe_weighted.bw",
+          "uri": "BW/gnomad_mis_combined_vir_mu_exp_af0epos00.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_21bp_oe_weighted_display",
-        
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_3bp_oe_weighted",
-      "name": "gnomad syn combined 3bp oe weighted",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_3bp_oe_weighted.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_3bp_oe_weighted_display",
-        
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_45bp_oe_weighted",
-      "name": "gnomad syn combined 45bp oe weighted",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_45bp_oe_weighted.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_45bp_oe_weighted_display",
-        
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
-    {
-      "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_93bp_oe_weighted",
-      "name": "gnomad syn combined 93bp oe weighted",
-      "adapter": {
-        "type": "BigWigAdapter",
-        "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_93bp_oe_weighted.bw",
-          "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_93bp_oe_weighted_display",
-        
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_9bp_oe_weighted",
-      "name": "gnomad syn combined 9bp oe weighted",
+      "trackId": "gnomad_mis_combined_vir_mu_exp_af1eneg02",
+      "name": "gnomad mis combined vir mu exp af1eneg02",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_9bp_oe_weighted.bw",
+          "uri": "BW/gnomad_mis_combined_vir_mu_exp_af1eneg02.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_9bp_oe_weighted_display",
-        
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_vir_depth_af0epos00",
-      "name": "gnomad syn combined vir depth af0epos00",
+      "trackId": "gnomad_mis_combined_vir_mu_exp_af1eneg03",
+      "name": "gnomad mis combined vir mu exp af1eneg03",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_vir_depth_af0epos00.bw",
+          "uri": "BW/gnomad_mis_combined_vir_mu_exp_af1eneg03.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_vir_depth_af0epos00_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_vir_depth_af1eneg02",
-      "name": "gnomad syn combined vir depth af1eneg02",
+      "trackId": "gnomad_mis_combined_vir_mu_exp_af1eneg04",
+      "name": "gnomad mis combined vir mu exp af1eneg04",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_vir_depth_af1eneg02.bw",
+          "uri": "BW/gnomad_mis_combined_vir_mu_exp_af1eneg04.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_vir_depth_af1eneg02_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_vir_depth_af1eneg03",
-      "name": "gnomad syn combined vir depth af1eneg03",
+      "trackId": "gnomad_mis_combined_vir_mu_exp_af1eneg05",
+      "name": "gnomad mis combined vir mu exp af1eneg05",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_vir_depth_af1eneg03.bw",
+          "uri": "BW/gnomad_mis_combined_vir_mu_exp_af1eneg05.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_vir_depth_af1eneg03_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_vir_depth_af1eneg04",
-      "name": "gnomad syn combined vir depth af1eneg04",
+      "trackId": "gnomad_mis_combined_vir_mu_exp_af1eneg06",
+      "name": "gnomad mis combined vir mu exp af1eneg06",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_vir_depth_af1eneg04.bw",
+          "uri": "BW/gnomad_mis_combined_vir_mu_exp_af1eneg06.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_vir_depth_af1eneg04_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_vir_depth_af1eneg05",
-      "name": "gnomad syn combined vir depth af1eneg05",
+      "trackId": "gnomad_mis_combined_vir_mu_exp_af1eneg07",
+      "name": "gnomad mis combined vir mu exp af1eneg07",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_vir_depth_af1eneg05.bw",
+          "uri": "BW/gnomad_mis_combined_vir_mu_exp_af1eneg07.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_vir_depth_af1eneg05_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_vir_depth_af1eneg06",
-      "name": "gnomad syn combined vir depth af1eneg06",
+      "trackId": "gnomad_mis_combined_vir_mu_exp_af1eneg08",
+      "name": "gnomad mis combined vir mu exp af1eneg08",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_vir_depth_af1eneg06.bw",
+          "uri": "BW/gnomad_mis_combined_vir_mu_exp_af1eneg08.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_vir_depth_af1eneg06_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_vir_depth_af1eneg07",
-      "name": "gnomad syn combined vir depth af1eneg07",
+      "trackId": "gnomad_mis_exomes_XX_21bp_exp",
+      "name": "gnomad mis exomes XX 21bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_vir_depth_af1eneg07.bw",
+          "uri": "BW/gnomad_mis_exomes_XX_21bp_exp.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_vir_depth_af1eneg07_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_vir_depth_af1eneg08",
-      "name": "gnomad syn combined vir depth af1eneg08",
+      "trackId": "gnomad_mis_exomes_XX_21bp_obs",
+      "name": "gnomad mis exomes XX 21bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_vir_depth_af1eneg08.bw",
+          "uri": "BW/gnomad_mis_exomes_XX_21bp_obs.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_vir_depth_af1eneg08_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_vir_length_af0epos00",
-      "name": "gnomad syn combined vir length af0epos00",
+      "trackId": "gnomad_mis_exomes_XX_21bp_oe",
+      "name": "gnomad mis exomes XX 21bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_vir_length_af0epos00.bw",
+          "uri": "BW/gnomad_mis_exomes_XX_21bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_vir_length_af0epos00_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_exomes_XX_21bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
-    }
-,
+      ]
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_vir_length_af1eneg02",
-      "name": "gnomad syn combined vir length af1eneg02",
+      "trackId": "gnomad_mis_exomes_XX_3bp_exp",
+      "name": "gnomad mis exomes XX 3bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_vir_length_af1eneg02.bw",
+          "uri": "BW/gnomad_mis_exomes_XX_3bp_exp.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_vir_length_af1eneg02_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_vir_length_af1eneg03",
-      "name": "gnomad syn combined vir length af1eneg03",
+      "trackId": "gnomad_mis_exomes_XX_3bp_obs",
+      "name": "gnomad mis exomes XX 3bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_vir_length_af1eneg03.bw",
+          "uri": "BW/gnomad_mis_exomes_XX_3bp_obs.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_vir_length_af1eneg03_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_vir_length_af1eneg04",
-      "name": "gnomad syn combined vir length af1eneg04",
+      "trackId": "gnomad_mis_exomes_XX_3bp_oe",
+      "name": "gnomad mis exomes XX 3bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_vir_length_af1eneg04.bw",
+          "uri": "BW/gnomad_mis_exomes_XX_3bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_vir_length_af1eneg04_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_exomes_XX_3bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
-    }
-,
+      ]
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_vir_length_af1eneg05",
-      "name": "gnomad syn combined vir length af1eneg05",
+      "trackId": "gnomad_mis_exomes_XX_45bp_exp",
+      "name": "gnomad mis exomes XX 45bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_vir_length_af1eneg05.bw",
+          "uri": "BW/gnomad_mis_exomes_XX_45bp_exp.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_vir_length_af1eneg05_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_vir_length_af1eneg06",
-      "name": "gnomad syn combined vir length af1eneg06",
+      "trackId": "gnomad_mis_exomes_XX_45bp_obs",
+      "name": "gnomad mis exomes XX 45bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_vir_length_af1eneg06.bw",
+          "uri": "BW/gnomad_mis_exomes_XX_45bp_obs.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_vir_length_af1eneg06_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_vir_length_af1eneg07",
-      "name": "gnomad syn combined vir length af1eneg07",
+      "trackId": "gnomad_mis_exomes_XX_45bp_oe",
+      "name": "gnomad mis exomes XX 45bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_vir_length_af1eneg07.bw",
+          "uri": "BW/gnomad_mis_exomes_XX_45bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_vir_length_af1eneg07_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_exomes_XX_45bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
-    }
-,
+      ]
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_combined_vir_length_af1eneg08",
-      "name": "gnomad syn combined vir length af1eneg08",
+      "trackId": "gnomad_mis_exomes_XX_93bp_exp",
+      "name": "gnomad mis exomes XX 93bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_combined_vir_length_af1eneg08.bw",
+          "uri": "BW/gnomad_mis_exomes_XX_93bp_exp.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_combined_vir_length_af1eneg08_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_exomes_21bp_oe",
-      "name": "gnomad syn exomes 21bp oe",
+      "trackId": "gnomad_mis_exomes_XX_93bp_obs",
+      "name": "gnomad mis exomes XX 93bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_exomes_21bp_oe.bw",
+          "uri": "BW/gnomad_mis_exomes_XX_93bp_obs.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_exomes_21bp_oe_display",
-        
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_exomes_3bp_oe",
-      "name": "gnomad syn exomes 3bp oe",
+      "trackId": "gnomad_mis_exomes_XX_93bp_oe",
+      "name": "gnomad mis exomes XX 93bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_exomes_3bp_oe.bw",
+          "uri": "BW/gnomad_mis_exomes_XX_93bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_exomes_3bp_oe_display",
-        
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_exomes_XX_93bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
-    }
-,
+      ]
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_exomes_45bp_oe",
-      "name": "gnomad syn exomes 45bp oe",
+      "trackId": "gnomad_mis_exomes_XX_9bp_exp",
+      "name": "gnomad mis exomes XX 9bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_exomes_45bp_oe.bw",
+          "uri": "BW/gnomad_mis_exomes_XX_9bp_exp.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_exomes_45bp_oe_display",
-        
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_exomes_93bp_oe",
-      "name": "gnomad syn exomes 93bp oe",
+      "trackId": "gnomad_mis_exomes_XX_9bp_obs",
+      "name": "gnomad mis exomes XX 9bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_exomes_93bp_oe.bw",
+          "uri": "BW/gnomad_mis_exomes_XX_9bp_obs.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_exomes_93bp_oe_display",
-        
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_exomes_9bp_oe",
-      "name": "gnomad syn exomes 9bp oe",
+      "trackId": "gnomad_mis_exomes_XX_9bp_oe",
+      "name": "gnomad mis exomes XX 9bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_exomes_9bp_oe.bw",
+          "uri": "BW/gnomad_mis_exomes_XX_9bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_exomes_9bp_oe_display",
-        
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_exomes_XX_9bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
-    }
-,
+      ]
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_genomes_21bp_oe",
-      "name": "gnomad syn genomes 21bp oe",
+      "trackId": "gnomad_mis_exomes_XY_21bp_exp",
+      "name": "gnomad mis exomes XY 21bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_genomes_21bp_oe.bw",
+          "uri": "BW/gnomad_mis_exomes_XY_21bp_exp.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_genomes_21bp_oe_display",
-        
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_genomes_3bp_oe",
-      "name": "gnomad syn genomes 3bp oe",
+      "trackId": "gnomad_mis_exomes_XY_21bp_obs",
+      "name": "gnomad mis exomes XY 21bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_genomes_3bp_oe.bw",
+          "uri": "BW/gnomad_mis_exomes_XY_21bp_obs.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_genomes_3bp_oe_display",
-        
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_genomes_45bp_oe",
-      "name": "gnomad syn genomes 45bp oe",
+      "trackId": "gnomad_mis_exomes_XY_21bp_oe",
+      "name": "gnomad mis exomes XY 21bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_genomes_45bp_oe.bw",
+          "uri": "BW/gnomad_mis_exomes_XY_21bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_genomes_45bp_oe_display",
-        
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_exomes_XY_21bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
-    }
-,
+      ]
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_genomes_93bp_oe",
-      "name": "gnomad syn genomes 93bp oe",
+      "trackId": "gnomad_mis_exomes_XY_3bp_exp",
+      "name": "gnomad mis exomes XY 3bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_genomes_93bp_oe.bw",
+          "uri": "BW/gnomad_mis_exomes_XY_3bp_exp.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_genomes_93bp_oe_display",
-        
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomad_syn_genomes_9bp_oe",
-      "name": "gnomad syn genomes 9bp oe",
+      "trackId": "gnomad_mis_exomes_XY_3bp_obs",
+      "name": "gnomad mis exomes XY 3bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomad_syn_genomes_9bp_oe.bw",
+          "uri": "BW/gnomad_mis_exomes_XY_3bp_obs.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomad_syn_genomes_9bp_oe_display",
-        
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_exomes_coverage_mean",
-      "name": "gnomadV4 exomes coverage mean",
+      "trackId": "gnomad_mis_exomes_XY_3bp_oe",
+      "name": "gnomad mis exomes XY 3bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_exomes_coverage_mean.bw",
+          "uri": "BW/gnomad_mis_exomes_XY_3bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_exomes_coverage_mean_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_exomes_XY_3bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
-    }
-,
+      ]
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_exomes_coverage_median_approx",
-      "name": "gnomadV4 exomes coverage median approx",
+      "trackId": "gnomad_mis_exomes_XY_45bp_exp",
+      "name": "gnomad mis exomes XY 45bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_exomes_coverage_median_approx.bw",
+          "uri": "BW/gnomad_mis_exomes_XY_45bp_exp.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_exomes_coverage_median_approx_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_exomes_coverage_over_1",
-      "name": "gnomadV4 exomes coverage over 1",
+      "trackId": "gnomad_mis_exomes_XY_45bp_obs",
+      "name": "gnomad mis exomes XY 45bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_exomes_coverage_over_1.bw",
+          "uri": "BW/gnomad_mis_exomes_XY_45bp_obs.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_exomes_coverage_over_1_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_exomes_coverage_over_10",
-      "name": "gnomadV4 exomes coverage over 10",
+      "trackId": "gnomad_mis_exomes_XY_45bp_oe",
+      "name": "gnomad mis exomes XY 45bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_exomes_coverage_over_10.bw",
+          "uri": "BW/gnomad_mis_exomes_XY_45bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_exomes_coverage_over_10_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_exomes_XY_45bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
-    }
-,
+      ]
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_exomes_coverage_over_100",
-      "name": "gnomadV4 exomes coverage over 100",
+      "trackId": "gnomad_mis_exomes_XY_93bp_exp",
+      "name": "gnomad mis exomes XY 93bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_exomes_coverage_over_100.bw",
+          "uri": "BW/gnomad_mis_exomes_XY_93bp_exp.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_exomes_coverage_over_100_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_exomes_coverage_over_15",
-      "name": "gnomadV4 exomes coverage over 15",
+      "trackId": "gnomad_mis_exomes_XY_93bp_obs",
+      "name": "gnomad mis exomes XY 93bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_exomes_coverage_over_15.bw",
+          "uri": "BW/gnomad_mis_exomes_XY_93bp_obs.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_exomes_coverage_over_15_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_exomes_coverage_over_20",
-      "name": "gnomadV4 exomes coverage over 20",
+      "trackId": "gnomad_mis_exomes_XY_93bp_oe",
+      "name": "gnomad mis exomes XY 93bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_exomes_coverage_over_20.bw",
+          "uri": "BW/gnomad_mis_exomes_XY_93bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_exomes_coverage_over_20_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_exomes_XY_93bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
-    }
-,
+      ]
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_exomes_coverage_over_25",
-      "name": "gnomadV4 exomes coverage over 25",
+      "trackId": "gnomad_mis_exomes_XY_9bp_exp",
+      "name": "gnomad mis exomes XY 9bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_exomes_coverage_over_25.bw",
+          "uri": "BW/gnomad_mis_exomes_XY_9bp_exp.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_exomes_coverage_over_25_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_exomes_coverage_over_30",
-      "name": "gnomadV4 exomes coverage over 30",
+      "trackId": "gnomad_mis_exomes_XY_9bp_obs",
+      "name": "gnomad mis exomes XY 9bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_exomes_coverage_over_30.bw",
+          "uri": "BW/gnomad_mis_exomes_XY_9bp_obs.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_exomes_coverage_over_30_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_exomes_coverage_over_5",
-      "name": "gnomadV4 exomes coverage over 5",
+      "trackId": "gnomad_mis_exomes_XY_9bp_oe",
+      "name": "gnomad mis exomes XY 9bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_exomes_coverage_over_5.bw",
+          "uri": "BW/gnomad_mis_exomes_XY_9bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_exomes_coverage_over_5_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_exomes_XY_9bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
-    }
-,
+      ]
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_exomes_coverage_over_50",
-      "name": "gnomadV4 exomes coverage over 50",
+      "trackId": "gnomad_mis_genomes_XX_21bp_exp",
+      "name": "gnomad mis genomes XX 21bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_exomes_coverage_over_50.bw",
+          "uri": "BW/gnomad_mis_genomes_XX_21bp_exp.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_exomes_coverage_over_50_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_exomes_coverage_total_DP",
-      "name": "gnomadV4 exomes coverage total DP",
+      "trackId": "gnomad_mis_genomes_XX_21bp_obs",
+      "name": "gnomad mis genomes XX 21bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_exomes_coverage_total_DP.bw",
+          "uri": "BW/gnomad_mis_genomes_XX_21bp_obs.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_exomes_coverage_total_DP_display",
-        "defaultRendering": "density",
-        "renderers": {
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_genomes_coverage_mean",
-      "name": "gnomadV4 genomes coverage mean",
+      "trackId": "gnomad_mis_genomes_XX_21bp_oe",
+      "name": "gnomad mis genomes XX 21bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_genomes_coverage_mean.bw",
+          "uri": "BW/gnomad_mis_genomes_XX_21bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_genomes_coverage_mean_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_genomes_XX_21bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
-    }
-,
+      ]
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_genomes_coverage_median_approx",
-      "name": "gnomadV4 genomes coverage median approx",
+      "trackId": "gnomad_mis_genomes_XX_3bp_exp",
+      "name": "gnomad mis genomes XX 3bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_genomes_coverage_median_approx.bw",
+          "uri": "BW/gnomad_mis_genomes_XX_3bp_exp.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_genomes_coverage_median_approx_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_genomes_coverage_over_1",
-      "name": "gnomadV4 genomes coverage over 1",
+      "trackId": "gnomad_mis_genomes_XX_3bp_obs",
+      "name": "gnomad mis genomes XX 3bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_genomes_coverage_over_1.bw",
+          "uri": "BW/gnomad_mis_genomes_XX_3bp_obs.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_genomes_coverage_over_1_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_genomes_coverage_over_10",
-      "name": "gnomadV4 genomes coverage over 10",
+      "trackId": "gnomad_mis_genomes_XX_3bp_oe",
+      "name": "gnomad mis genomes XX 3bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_genomes_coverage_over_10.bw",
+          "uri": "BW/gnomad_mis_genomes_XX_3bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_genomes_coverage_over_10_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_genomes_XX_3bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
-    }
-,
+      ]
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_genomes_coverage_over_100",
-      "name": "gnomadV4 genomes coverage over 100",
+      "trackId": "gnomad_mis_genomes_XX_45bp_exp",
+      "name": "gnomad mis genomes XX 45bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_genomes_coverage_over_100.bw",
+          "uri": "BW/gnomad_mis_genomes_XX_45bp_exp.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_genomes_coverage_over_100_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_genomes_coverage_over_15",
-      "name": "gnomadV4 genomes coverage over 15",
+      "trackId": "gnomad_mis_genomes_XX_45bp_obs",
+      "name": "gnomad mis genomes XX 45bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_genomes_coverage_over_15.bw",
+          "uri": "BW/gnomad_mis_genomes_XX_45bp_obs.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_genomes_coverage_over_15_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_genomes_coverage_over_20",
-      "name": "gnomadV4 genomes coverage over 20",
+      "trackId": "gnomad_mis_genomes_XX_45bp_oe",
+      "name": "gnomad mis genomes XX 45bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_genomes_coverage_over_20.bw",
+          "uri": "BW/gnomad_mis_genomes_XX_45bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_genomes_coverage_over_20_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_genomes_XX_45bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
-    }
-,
+      ]
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_genomes_coverage_over_25",
-      "name": "gnomadV4 genomes coverage over 25",
+      "trackId": "gnomad_mis_genomes_XX_93bp_exp",
+      "name": "gnomad mis genomes XX 93bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_genomes_coverage_over_25.bw",
+          "uri": "BW/gnomad_mis_genomes_XX_93bp_exp.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_genomes_coverage_over_25_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_genomes_coverage_over_30",
-      "name": "gnomadV4 genomes coverage over 30",
+      "trackId": "gnomad_mis_genomes_XX_93bp_obs",
+      "name": "gnomad mis genomes XX 93bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_genomes_coverage_over_30.bw",
+          "uri": "BW/gnomad_mis_genomes_XX_93bp_obs.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_genomes_coverage_over_30_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_genomes_coverage_over_5",
-      "name": "gnomadV4 genomes coverage over 5",
+      "trackId": "gnomad_mis_genomes_XX_93bp_oe",
+      "name": "gnomad mis genomes XX 93bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_genomes_coverage_over_5.bw",
+          "uri": "BW/gnomad_mis_genomes_XX_93bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_genomes_coverage_over_5_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_genomes_XX_93bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
-    }
-,
+      ]
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_genomes_coverage_over_50",
-      "name": "gnomadV4 genomes coverage over 50",
+      "trackId": "gnomad_mis_genomes_XX_9bp_exp",
+      "name": "gnomad mis genomes XX 9bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_genomes_coverage_over_50.bw",
+          "uri": "BW/gnomad_mis_genomes_XX_9bp_exp.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_genomes_coverage_over_50_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "gnomadV4_genomes_coverage_total_DP",
-      "name": "gnomadV4 genomes coverage total DP",
+      "trackId": "gnomad_mis_genomes_XX_9bp_obs",
+      "name": "gnomad mis genomes XX 9bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/gnomadV4_genomes_coverage_total_DP.bw",
+          "uri": "BW/gnomad_mis_genomes_XX_9bp_obs.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "gnomAD", "Coverage"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "gnomadV4_genomes_coverage_total_DP_display",
-        "defaultRendering": "density",
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#2e7d32"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "nhp_mis_21bp_oe",
-      "name": "nhp mis 21bp oe",
+      "trackId": "gnomad_mis_genomes_XX_9bp_oe",
+      "name": "gnomad mis genomes XX 9bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/nhp_mis_21bp_oe.bw",
+          "uri": "BW/gnomad_mis_genomes_XX_9bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "NHP", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "nhp_mis_21bp_oe_display",
-        
-        "renderers": {
-         
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_genomes_XX_9bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
-    }
-,
+      ]
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "nhp_mis_3bp_oe",
-      "name": "nhp mis 3bp oe",
+      "trackId": "gnomad_mis_genomes_XY_21bp_exp",
+      "name": "gnomad mis genomes XY 21bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/nhp_mis_3bp_oe.bw",
+          "uri": "BW/gnomad_mis_genomes_XY_21bp_exp.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "NHP", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "nhp_mis_3bp_oe_display",
-        
-        "renderers": {
-          
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "nhp_mis_45bp_oe",
-      "name": "nhp mis 45bp oe",
+      "trackId": "gnomad_mis_genomes_XY_21bp_obs",
+      "name": "gnomad mis genomes XY 21bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/nhp_mis_45bp_oe.bw",
+          "uri": "BW/gnomad_mis_genomes_XY_21bp_obs.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "NHP", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "nhp_mis_45bp_oe_display",
-        
-        "renderers": {
-          
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "nhp_mis_93bp_oe",
-      "name": "nhp mis 93bp oe",
+      "trackId": "gnomad_mis_genomes_XY_21bp_oe",
+      "name": "gnomad mis genomes XY 21bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/nhp_mis_93bp_oe.bw",
+          "uri": "BW/gnomad_mis_genomes_XY_21bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "NHP", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "nhp_mis_93bp_oe_display",
-        
-        "renderers": {
-          
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_genomes_XY_21bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
-    }
-,
+      ]
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "nhp_mis_9bp_oe",
-      "name": "nhp mis 9bp oe",
+      "trackId": "gnomad_mis_genomes_XY_3bp_exp",
+      "name": "gnomad mis genomes XY 3bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/nhp_mis_9bp_oe.bw",
+          "uri": "BW/gnomad_mis_genomes_XY_3bp_exp.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "NHP", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "nhp_mis_9bp_oe_display",
-        
-        "renderers": {
-          
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "nhp_mis_aa_vir_depth_af0epos00",
-      "name": "nhp mis aa vir depth af0epos00",
+      "trackId": "gnomad_mis_genomes_XY_3bp_obs",
+      "name": "gnomad mis genomes XY 3bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/nhp_mis_aa_vir_depth_af0epos00.bw",
+          "uri": "BW/gnomad_mis_genomes_XY_3bp_obs.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "NHP", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "nhp_mis_aa_vir_depth_af0epos00_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "nhp_mis_aa_vir_length_af0epos00",
-      "name": "nhp mis aa vir length af0epos00",
+      "trackId": "gnomad_mis_genomes_XY_3bp_oe",
+      "name": "gnomad mis genomes XY 3bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/nhp_mis_aa_vir_length_af0epos00.bw",
+          "uri": "BW/gnomad_mis_genomes_XY_3bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "NHP", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "nhp_mis_aa_vir_length_af0epos00_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_genomes_XY_3bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
-    }
-,
+      ]
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "nhp_mis_vir_depth_af0epos00",
-      "name": "nhp mis vir depth af0epos00",
+      "trackId": "gnomad_mis_genomes_XY_45bp_exp",
+      "name": "gnomad mis genomes XY 45bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/nhp_mis_vir_depth_af0epos00.bw",
+          "uri": "BW/gnomad_mis_genomes_XY_45bp_exp.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "NHP", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "nhp_mis_vir_depth_af0epos00_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "nhp_mis_vir_length_af0epos00",
-      "name": "nhp mis vir length af0epos00",
+      "trackId": "gnomad_mis_genomes_XY_45bp_obs",
+      "name": "gnomad mis genomes XY 45bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/nhp_mis_vir_length_af0epos00.bw",
+          "uri": "BW/gnomad_mis_genomes_XY_45bp_obs.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "NHP", "Missense"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "nhp_mis_vir_length_af0epos00_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "nhp_syn_21bp_oe",
-      "name": "nhp syn 21bp oe",
+      "trackId": "gnomad_mis_genomes_XY_45bp_oe",
+      "name": "gnomad mis genomes XY 45bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/nhp_syn_21bp_oe.bw",
+          "uri": "BW/gnomad_mis_genomes_XY_45bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "NHP", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "nhp_syn_21bp_oe_display",
-        
-        "renderers": {
-          
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_genomes_XY_45bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
-    }
-,
+      ]
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "nhp_syn_3bp_oe",
-      "name": "nhp syn 3bp oe",
+      "trackId": "gnomad_mis_genomes_XY_93bp_exp",
+      "name": "gnomad mis genomes XY 93bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/nhp_syn_3bp_oe.bw",
+          "uri": "BW/gnomad_mis_genomes_XY_93bp_exp.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "NHP", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "nhp_syn_3bp_oe_display",
-        
-        "renderers": {
-          
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "nhp_syn_45bp_oe",
-      "name": "nhp syn 45bp oe",
+      "trackId": "gnomad_mis_genomes_XY_93bp_obs",
+      "name": "gnomad mis genomes XY 93bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/nhp_syn_45bp_oe.bw",
+          "uri": "BW/gnomad_mis_genomes_XY_93bp_obs.bw",
           "locationType": "UriLocation"
         }
-      },
-      "category": ["Quantitative Tracks", "NHP", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "nhp_syn_45bp_oe_display",
-        
-        "renderers": {
-          
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
-        }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "nhp_syn_93bp_oe",
-      "name": "nhp syn 93bp oe",
+      "trackId": "gnomad_mis_genomes_XY_93bp_oe",
+      "name": "gnomad mis genomes XY 93bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/nhp_syn_93bp_oe.bw",
+          "uri": "BW/gnomad_mis_genomes_XY_93bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "NHP", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "nhp_syn_93bp_oe_display",
-        
-        "renderers": {
-          
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_genomes_XY_93bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
-    }
-,
+      ]
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "nhp_syn_9bp_oe",
-      "name": "nhp syn 9bp oe",
+      "trackId": "gnomad_mis_genomes_XY_9bp_exp",
+      "name": "gnomad mis genomes XY 9bp exp",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/nhp_syn_9bp_oe.bw",
+          "uri": "BW/gnomad_mis_genomes_XY_9bp_exp.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "NHP", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "nhp_syn_9bp_oe_display",
-        
-        "renderers": {
-          
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "jexl:get(feature, 'score') > 5 ? 'green' : 'red'"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "nhp_syn_vir_depth_af0epos00",
-      "name": "nhp syn vir depth af0epos00",
+      "trackId": "gnomad_mis_genomes_XY_9bp_obs",
+      "name": "gnomad mis genomes XY 9bp obs",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/nhp_syn_vir_depth_af0epos00.bw",
+          "uri": "BW/gnomad_mis_genomes_XY_9bp_obs.bw",
           "locationType": "UriLocation"
-        }
-      },
-      "category": ["Quantitative Tracks", "NHP", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "nhp_syn_vir_depth_af0epos00_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#1976d2"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#1976d2"
-          }
         }
-      }]
-    }
-,
+      }
+    },
     {
       "type": "QuantitativeTrack",
-      "trackId": "nhp_syn_vir_length_af0epos00",
-      "name": "nhp syn vir length af0epos00",
+      "trackId": "gnomad_mis_genomes_XY_9bp_oe",
+      "name": "gnomad mis genomes XY 9bp oe",
+      "assemblyNames": [
+        "hg38"
+      ],
+      "category": [
+        "Quantitative Tracks",
+        "gnomAD",
+        "Missense"
+      ],
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "./BW/nhp_syn_vir_length_af0epos00.bw",
+          "uri": "BW/gnomad_mis_genomes_XY_9bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
-      "category": ["Quantitative Tracks", "NHP", "Synonymous"],
-      "assemblyNames": ["hg38"],
-      "displays": [{
-        "type": "LinearWiggleDisplay",
-        "displayId": "nhp_syn_vir_length_af0epos00_display",
-        
-        "renderers": {
-          "LinePlotRenderer": {
-            "type": "LinePlotRenderer",
-            "lineWidth": 2,
-            "color": "#757575"
-          },
-          "XYPlotRenderer": {
-            "type": "XYPlotRenderer",
-            "color": "#757575"
+      "displays": [
+        {
+          "type": "LinearWiggleDisplay",
+          "displayId": "gnomad_mis_genomes_XY_9bp_oe_display",
+          "defaultRendering": "line",
+          "renderers": {
+            "LinePlotRenderer": {
+              "type": "LinePlotRenderer",
+              "lineWidth": 2,
+              "color": "jexl:get(feature,\"score\") > 1 ? \"green\" : get(feature,\"score\") > 0.5 ? \"orange\" : \"red\""
+            }
           }
         }
-      }]
+      ]
     }
   ],
   "defaultSession": {
