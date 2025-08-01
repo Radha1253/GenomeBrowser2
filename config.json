@@ -76,7 +76,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined__XX_21bp_oe_weighted.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined__XX_21bp_oe_weighted.bw",
           "locationType": "UriLocation"
         }
       },
@@ -110,7 +110,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined__XX_3bp_oe_weighted.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined__XX_3bp_oe_weighted.bw",
           "locationType": "UriLocation"
         }
       },
@@ -144,7 +144,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined__XX_45bp_oe_weighted.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined__XX_45bp_oe_weighted.bw",
           "locationType": "UriLocation"
         }
       },
@@ -178,7 +178,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined__XX_93bp_oe_weighted.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined__XX_93bp_oe_weighted.bw",
           "locationType": "UriLocation"
         }
       },
@@ -212,7 +212,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined__XX_9bp_oe_weighted.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined__XX_9bp_oe_weighted.bw",
           "locationType": "UriLocation"
         }
       },
@@ -246,7 +246,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined__XY_21bp_oe_weighted.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined__XY_21bp_oe_weighted.bw",
           "locationType": "UriLocation"
         }
       },
@@ -280,7 +280,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined__XY_3bp_oe_weighted.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined__XY_3bp_oe_weighted.bw",
           "locationType": "UriLocation"
         }
       },
@@ -314,7 +314,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined__XY_45bp_oe_weighted.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined__XY_45bp_oe_weighted.bw",
           "locationType": "UriLocation"
         }
       },
@@ -348,7 +348,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined__XY_93bp_oe_weighted\r.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined__XY_93bp_oe_weighted\r.bw",
           "locationType": "UriLocation"
         }
       },
@@ -382,7 +382,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined__XY_9bp_oe_weighted.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined__XY_9bp_oe_weighted.bw",
           "locationType": "UriLocation"
         }
       },
@@ -416,7 +416,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_aa_vir_depth_af0epos00.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_aa_vir_depth_af0epos00.bw",
           "locationType": "UriLocation"
         }
       }
@@ -436,7 +436,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_aa_vir_depth_af1eneg02.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_aa_vir_depth_af1eneg02.bw",
           "locationType": "UriLocation"
         }
       }
@@ -456,7 +456,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_aa_vir_depth_af1eneg03.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_aa_vir_depth_af1eneg03.bw",
           "locationType": "UriLocation"
         }
       }
@@ -476,7 +476,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_aa_vir_depth_af1eneg04.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_aa_vir_depth_af1eneg04.bw",
           "locationType": "UriLocation"
         }
       }
@@ -496,7 +496,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_aa_vir_depth_af1eneg05.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_aa_vir_depth_af1eneg05.bw",
           "locationType": "UriLocation"
         }
       }
@@ -516,7 +516,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_aa_vir_depth_af1eneg06.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_aa_vir_depth_af1eneg06.bw",
           "locationType": "UriLocation"
         }
       }
@@ -536,7 +536,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_aa_vir_depth_af1eneg07.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_aa_vir_depth_af1eneg07.bw",
           "locationType": "UriLocation"
         }
       }
@@ -556,7 +556,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_aa_vir_depth_af1eneg08.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_aa_vir_depth_af1eneg08.bw",
           "locationType": "UriLocation"
         }
       }
@@ -576,7 +576,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_aa_vir_length_af0epos00.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_aa_vir_length_af0epos00.bw",
           "locationType": "UriLocation"
         }
       }
@@ -596,7 +596,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_aa_vir_length_af1eneg02.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_aa_vir_length_af1eneg02.bw",
           "locationType": "UriLocation"
         }
       }
@@ -616,7 +616,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_aa_vir_length_af1eneg03.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_aa_vir_length_af1eneg03.bw",
           "locationType": "UriLocation"
         }
       }
@@ -636,7 +636,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_aa_vir_length_af1eneg04.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_aa_vir_length_af1eneg04.bw",
           "locationType": "UriLocation"
         }
       }
@@ -656,7 +656,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_aa_vir_length_af1eneg05.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_aa_vir_length_af1eneg05.bw",
           "locationType": "UriLocation"
         }
       }
@@ -676,7 +676,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_aa_vir_length_af1eneg06.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_aa_vir_length_af1eneg06.bw",
           "locationType": "UriLocation"
         }
       }
@@ -696,7 +696,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_aa_vir_length_af1eneg07.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_aa_vir_length_af1eneg07.bw",
           "locationType": "UriLocation"
         }
       }
@@ -716,7 +716,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_aa_vir_length_af1eneg08.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_aa_vir_length_af1eneg08.bw",
           "locationType": "UriLocation"
         }
       }
@@ -736,7 +736,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_mean_vir_exp_af0epos00.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_mean_vir_exp_af0epos00.bw",
           "locationType": "UriLocation"
         }
       }
@@ -756,7 +756,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_mean_vir_exp_af1eneg02.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_mean_vir_exp_af1eneg02.bw",
           "locationType": "UriLocation"
         }
       }
@@ -776,7 +776,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_mean_vir_exp_af1eneg03.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_mean_vir_exp_af1eneg03.bw",
           "locationType": "UriLocation"
         }
       }
@@ -796,7 +796,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_mean_vir_exp_af1eneg04.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_mean_vir_exp_af1eneg04.bw",
           "locationType": "UriLocation"
         }
       }
@@ -816,7 +816,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_mean_vir_exp_af1eneg05.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_mean_vir_exp_af1eneg05.bw",
           "locationType": "UriLocation"
         }
       }
@@ -836,7 +836,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_mean_vir_exp_af1eneg06.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_mean_vir_exp_af1eneg06.bw",
           "locationType": "UriLocation"
         }
       }
@@ -856,7 +856,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_mean_vir_exp_af1eneg07.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_mean_vir_exp_af1eneg07.bw",
           "locationType": "UriLocation"
         }
       }
@@ -876,7 +876,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_mean_vir_exp_af1eneg08.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_mean_vir_exp_af1eneg08.bw",
           "locationType": "UriLocation"
         }
       }
@@ -896,7 +896,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_na_total_af0epos00.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_na_total_af0epos00.bw",
           "locationType": "UriLocation"
         }
       }
@@ -916,7 +916,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_na_total_af1eneg02.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_na_total_af1eneg02.bw",
           "locationType": "UriLocation"
         }
       }
@@ -936,7 +936,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_na_total_af1eneg03.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_na_total_af1eneg03.bw",
           "locationType": "UriLocation"
         }
       }
@@ -956,7 +956,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_na_total_af1eneg04.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_na_total_af1eneg04.bw",
           "locationType": "UriLocation"
         }
       }
@@ -976,7 +976,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_na_total_af1eneg05.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_na_total_af1eneg05.bw",
           "locationType": "UriLocation"
         }
       }
@@ -996,7 +996,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_na_total_af1eneg06.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_na_total_af1eneg06.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1016,7 +1016,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_na_total_af1eneg07.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_na_total_af1eneg07.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1036,7 +1036,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_na_total_af1eneg08.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_na_total_af1eneg08.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1056,7 +1056,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_depth_af0epos00.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_depth_af0epos00.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1076,7 +1076,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_depth_af1eneg02.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_depth_af1eneg02.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1096,7 +1096,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_depth_af1eneg03.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_depth_af1eneg03.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1116,7 +1116,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_depth_af1eneg04.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_depth_af1eneg04.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1136,7 +1136,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_depth_af1eneg05.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_depth_af1eneg05.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1156,7 +1156,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_depth_af1eneg06.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_depth_af1eneg06.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1176,7 +1176,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_depth_af1eneg07.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_depth_af1eneg07.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1196,7 +1196,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_depth_af1eneg08.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_depth_af1eneg08.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1216,7 +1216,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_length_af0epos00.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_length_af0epos00.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1236,7 +1236,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_length_af1eneg02.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_length_af1eneg02.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1256,7 +1256,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_length_af1eneg03.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_length_af1eneg03.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1276,7 +1276,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_length_af1eneg04.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_length_af1eneg04.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1296,7 +1296,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_length_af1eneg05.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_length_af1eneg05.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1316,7 +1316,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_length_af1eneg06.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_length_af1eneg06.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1336,7 +1336,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_length_af1eneg07.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_length_af1eneg07.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1356,7 +1356,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_length_af1eneg08.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_length_af1eneg08.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1376,7 +1376,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_mu_exp_af0epos00.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_mu_exp_af0epos00.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1396,7 +1396,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_mu_exp_af1eneg02.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_mu_exp_af1eneg02.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1416,7 +1416,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_mu_exp_af1eneg03.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_mu_exp_af1eneg03.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1436,7 +1436,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_mu_exp_af1eneg04.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_mu_exp_af1eneg04.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1456,7 +1456,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_mu_exp_af1eneg05.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_mu_exp_af1eneg05.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1476,7 +1476,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_mu_exp_af1eneg06.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_mu_exp_af1eneg06.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1496,7 +1496,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_mu_exp_af1eneg07.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_mu_exp_af1eneg07.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1516,7 +1516,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_combined_vir_mu_exp_af1eneg08.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_combined_vir_mu_exp_af1eneg08.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1536,7 +1536,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XX_21bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XX_21bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1556,7 +1556,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XX_21bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XX_21bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1576,7 +1576,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XX_21bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XX_21bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
@@ -1610,7 +1610,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XX_3bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XX_3bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1630,7 +1630,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XX_3bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XX_3bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1650,7 +1650,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XX_3bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XX_3bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
@@ -1684,7 +1684,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XX_45bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XX_45bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1704,7 +1704,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XX_45bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XX_45bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1724,7 +1724,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XX_45bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XX_45bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
@@ -1758,7 +1758,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XX_93bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XX_93bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1778,7 +1778,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XX_93bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XX_93bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1798,7 +1798,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XX_93bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XX_93bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
@@ -1832,7 +1832,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XX_9bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XX_9bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1852,7 +1852,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XX_9bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XX_9bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1872,7 +1872,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XX_9bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XX_9bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
@@ -1906,7 +1906,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XY_21bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XY_21bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1926,7 +1926,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XY_21bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XY_21bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -1946,7 +1946,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XY_21bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XY_21bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
@@ -1980,7 +1980,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XY_3bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XY_3bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2000,7 +2000,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XY_3bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XY_3bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2020,7 +2020,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XY_3bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XY_3bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
@@ -2054,7 +2054,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XY_45bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XY_45bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2074,7 +2074,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XY_45bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XY_45bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2094,7 +2094,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XY_45bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XY_45bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
@@ -2128,7 +2128,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XY_93bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XY_93bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2148,7 +2148,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XY_93bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XY_93bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2168,7 +2168,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XY_93bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XY_93bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
@@ -2202,7 +2202,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XY_9bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XY_9bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2222,7 +2222,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XY_9bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XY_9bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2242,7 +2242,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_exomes_XY_9bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_exomes_XY_9bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
@@ -2276,7 +2276,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XX_21bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XX_21bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2296,7 +2296,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XX_21bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XX_21bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2316,7 +2316,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XX_21bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XX_21bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
@@ -2350,7 +2350,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XX_3bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XX_3bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2370,7 +2370,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XX_3bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XX_3bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2390,7 +2390,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XX_3bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XX_3bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
@@ -2424,7 +2424,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XX_45bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XX_45bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2444,7 +2444,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XX_45bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XX_45bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2464,7 +2464,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XX_45bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XX_45bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
@@ -2498,7 +2498,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XX_93bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XX_93bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2518,7 +2518,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XX_93bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XX_93bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2538,7 +2538,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XX_93bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XX_93bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
@@ -2572,7 +2572,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XX_9bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XX_9bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2592,7 +2592,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XX_9bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XX_9bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2612,7 +2612,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XX_9bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XX_9bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
@@ -2646,7 +2646,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XY_21bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XY_21bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2666,7 +2666,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XY_21bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XY_21bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2686,7 +2686,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XY_21bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XY_21bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
@@ -2720,7 +2720,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XY_3bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XY_3bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2740,7 +2740,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XY_3bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XY_3bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2760,7 +2760,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XY_3bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XY_3bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
@@ -2794,7 +2794,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XY_45bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XY_45bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2814,7 +2814,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XY_45bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XY_45bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2834,7 +2834,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XY_45bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XY_45bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
@@ -2868,7 +2868,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XY_93bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XY_93bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2888,7 +2888,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XY_93bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XY_93bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2908,7 +2908,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XY_93bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XY_93bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
@@ -2942,7 +2942,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XY_9bp_exp.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XY_9bp_exp.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2962,7 +2962,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XY_9bp_obs.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XY_9bp_obs.bw",
           "locationType": "UriLocation"
         }
       }
@@ -2982,7 +2982,7 @@
       "adapter": {
         "type": "BigWigAdapter",
         "bigWigLocation": {
-          "uri": "https://radha1253.github.io/GenomeBrowser2/BW/gnomad_mis_genomes_XY_9bp_oe.bw",
+          "uri": "https://radha1253.github.io/GenomeBrowser2/test_data/BW/gnomad_mis_genomes_XY_9bp_oe.bw",
           "locationType": "UriLocation"
         }
       },
