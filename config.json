@@ -84,7 +84,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_combined__XX_21bp_oe_weighted_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -118,7 +118,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_combined__XX_3bp_oe_weighted_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -152,7 +152,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_combined__XX_45bp_oe_weighted_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -186,7 +186,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_combined__XX_93bp_oe_weighted_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -220,7 +220,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_combined__XX_9bp_oe_weighted_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -254,7 +254,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_combined__XY_21bp_oe_weighted_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -288,7 +288,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_combined__XY_3bp_oe_weighted_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -322,7 +322,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_combined__XY_45bp_oe_weighted_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -356,7 +356,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_combined__XY_93bp_oe_weighted\r_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -390,7 +390,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_combined__XY_9bp_oe_weighted_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -1584,7 +1584,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_exomes_XX_21bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -1658,7 +1658,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_exomes_XX_3bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -1732,7 +1732,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_exomes_XX_45bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -1806,7 +1806,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_exomes_XX_93bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -1880,7 +1880,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_exomes_XX_9bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -1954,7 +1954,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_exomes_XY_21bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -2028,7 +2028,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_exomes_XY_3bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -2102,7 +2102,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_exomes_XY_45bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -2176,7 +2176,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_exomes_XY_93bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -2250,7 +2250,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_exomes_XY_9bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -2324,7 +2324,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_genomes_XX_21bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -2398,7 +2398,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_genomes_XX_3bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -2472,7 +2472,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_genomes_XX_45bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -2546,7 +2546,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_genomes_XX_93bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -2620,7 +2620,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_genomes_XX_9bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -2694,7 +2694,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_genomes_XY_21bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -2768,7 +2768,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_genomes_XY_3bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -2842,7 +2842,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_genomes_XY_45bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -2916,7 +2916,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_genomes_XY_93bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
@@ -2990,7 +2990,7 @@
         {
           "type": "LinearWiggleDisplay",
           "displayId": "gnomad_mis_genomes_XY_9bp_oe_display",
-          "defaultRendering": "line",
+          
           "renderers": {
             "LinePlotRenderer": {
               "type": "LinePlotRenderer",
